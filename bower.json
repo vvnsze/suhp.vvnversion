@@ -1,0 +1,27 @@
+{
+  "name": "suhp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Lee Mordell",
+    "Vivian Sze",
+    "Lucas Fisher",
+    "Lauren Settle"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lolosett/suhp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "client/lib"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "ngstorage": "^0.3.11"
+  }
+}
