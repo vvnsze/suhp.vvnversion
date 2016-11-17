@@ -2,12 +2,12 @@
 A user contains a username, salt, email, hashed password, and password(set as VIRTUAL [ie. not visible in DB]).
 A goal belongs to a user instance, thus each goal has userId associated with it. It has a description,
 a deadline(in datetime format), hasExpired, and hasCompleted fields.
-An email also belongs to a user and emails can be pulled by the associated userId. 
+An email also belongs to a user and emails can be pulled by the associated userId.
 */
 
 var Sequelize = require('sequelize');
 var pg = require('pg');
-var db = new Sequelize('postgres://admin:IRYNMXNYKZSGGJXE@aws-us-east-1-portal.9.dblayer.com:11612/compose');
+var db = new Sequelize('postgres://admin:RFMFJTYTDJBBJTTN@aws-us-east-1-portal.9.dblayer.com:15350/suhp');
 var bcrypt = require('bcrypt');
 
 // Checks if the database has been loaded - appears in the console
@@ -60,7 +60,7 @@ var Email = db.define('Email', {
 Goal.belongsTo(User);
 Email.belongsTo(User);
 
-//Syncs tables to create tables 
+//Syncs tables to create tables
 User.sync();
 Goal.sync();
 Email.sync();
