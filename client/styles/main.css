@@ -122,3 +122,8 @@
   position: fixed;
   font-family: 'Comfortaa', sans-serif;
 }
+
+.centersignUp {
+  position: relative;
+  display: inline-block;
+}
