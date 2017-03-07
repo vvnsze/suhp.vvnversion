@@ -18,25 +18,23 @@
        </div>
      </div>
 
-   <div class = "signinform" ng-hide='ctrl.showFriendForm'>
-     <form name="signupForm" class = "centersignUp">
-       <p id="signupSign">Join the Greater Good</p>
+   <div class = "signinform centersignUp" ng-hide='ctrl.showFriendForm'>
+     <form name="signupForm" >
+       <div class="signinlogo fa fa-bell fa-3x"></div>
+       <h3>Join the Greater Good</h3>
        <br>
-       <div class='authPadding'>
-         <p>What's your name?</p>
+       <div class='signUpPadding'>
          <p ng-show="ctrl.usernameTaken">
            Try a new Username
          </p>
-         <input class = "authinput" required type='text' ng-model='ctrl.user.username'>
+         <input class = "authinput" placeholder="What's your name?" required type='text' ng-model='ctrl.user.username'>
        </div>
        <p ng-show='ctrl.errorMsg.length > 3' class="signinError">{{ctrl.errorMsg}}</p>
-       <div class='authPadding'>
-         <p>What's your email?</p>
-         <input class = "authinput" required type='email' ng-model='ctrl.user.email'>
+       <div class='signUpPadding'>
+         <input class = "authinput" required type='email' ng-model='ctrl.user.email' placeholder="what's your email?">
        </div>
-       <div class='authPadding'>
-         <p>Create a password:</p>
-         <input class = "authinput" required type='password' ng-model='ctrl.user.password'>
+       <div class='signUpPadding'>
+         <input class = "authinput" required type='password' ng-model='ctrl.user.password' placeholder="Create a password:">
        </div>
        <br>
        <button class="signButton" ng-click='ctrl.signup()'>Join</button>

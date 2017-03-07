@@ -114,7 +114,8 @@
 }
 
 .signupBackground{
-  background-image: url('../assets/dadWithDaughter.jpg');
+  background: url('../assets/dadWithDaughter.jpg') no-repeat center top fixed;
+  background-size: cover;
   width:100%;
   height:100%;
   top:0px;
@@ -124,6 +125,15 @@
 }
 
 .centersignUp {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -250px;
+}
+
+.signUpPadding {
   position: relative;
-  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
