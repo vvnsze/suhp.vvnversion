@@ -1,14 +1,7 @@
-<div class = "container-fluid signupBackground">
+<div class = "container-fluid addFriendsBackground">
 
-  <!-- <div class="row jumbotron" id= "signupJumbo">
-    <div class="col-md-12">
-
-      <h3> Prepare to be punished</h3>
-    </div>
-  </div> -->
 
  <!-- this is the code for user signup -->
- <!-- <div class='row'> -->
 
  <div class= "outersignIn">
      <div class="signInTitle">
@@ -29,14 +22,13 @@
          </p>
          <input class = "authinput" placeholder="What's your name?" required type='text' ng-model='ctrl.user.username'>
        </div>
-       <p ng-show='ctrl.errorMsg.length > 3' class="signinError">{{ctrl.errorMsg}}</p>
        <div class='signUpPadding'>
          <input class = "authinput" required type='email' ng-model='ctrl.user.email' placeholder="what's your email?">
        </div>
        <div class='signUpPadding'>
          <input class = "authinput" required type='password' ng-model='ctrl.user.password' placeholder="Create a password:">
        </div>
-       <br>
+       <p ng-show='ctrl.errorMsg.length > 3' class="signinError">{{ctrl.errorMsg}}</p>
        <button class="signButton" ng-click='ctrl.signup()'>Join</button>
        <br>
        <a class= "signLink" href="#/signin">Already a member? <strong>Signin</strong></a>

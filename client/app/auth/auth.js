@@ -48,13 +48,17 @@ angular.module('suhp.auth', [])
     });
   };
 
+  vm.changeBackground = function(){
+
+  }
+
   // Triggers the auth function so it posts user information and directs them to dashboard
 
   vm.signin = function(){
     Auth.signin(vm.user)
       .then(function(response){
 
-        if(response){          
+        if(response){
           User.currentUser = vm.user.username;
           console.log('vm user', response.data);
           console.log('currentUser', User.currentUser);
